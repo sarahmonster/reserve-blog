@@ -269,6 +269,7 @@ button,
 input,
 select,
 textarea {
+  font-weight: 300;
   line-height: 1.5;
 }
 
@@ -685,6 +686,10 @@ a:hover, a:active {
   margin: 0 auto;
   letter-spacing: 3.28333px;
   text-transform: uppercase;
+}
+
+#secondary {
+  padding-left: 0;
 }
 
 /*--------------------------------------------------------------
