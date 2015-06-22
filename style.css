@@ -277,6 +277,11 @@ h1, .site-description, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
+h1, .site-description {
+  font-size: 41px;
+  line-height: 1.15;
+}
+
 dfn, cite, em, i {
   font-style: italic;
 }
@@ -728,20 +733,49 @@ a:hover, a:active {
   margin: 0 0 1.5em;
 }
 
-.byline,
-.updated:not(.published) {
+/* Post headers */
+.entry-header {
+  border-bottom: 1px solid #E4E4E4;
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+}
+
+.entry-title,
+.page-title {
+  letter-spacing: normal;
+  margin: 0 0 10px;
+  text-transform: none;
+}
+.entry-title a,
+.page-title a {
+  color: #777;
+}
+.entry-title a:hover,
+.page-title a:hover {
+  color: #ac9456;
+  text-decoration: none;
+}
+
+.entry-meta {
+  font-size: 13px;
+  color: #AAA;
+}
+
+.byline {
   display: none;
 }
 
-.single .byline,
-.group-blog .byline {
-  display: inline;
-}
-
+/* Post content */
 .page-content,
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
+}
+.page-content p:first-of-type,
+.entry-content p:first-of-type,
+.entry-summary p:first-of-type {
+  font-size: 1.375em;
+  /* Use relative font size to get to 22px */
 }
 
 .page-links {

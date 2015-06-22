@@ -6,20 +6,47 @@
 	margin: 0 0 1.5em;
 }
 
-.byline,
-.updated:not(.published){
+/* Post headers */
+.entry-header {
+  border-bottom: 1px solid $color__border;
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+}
+
+.entry-title,
+.page-title {
+  letter-spacing: normal;
+  margin: 0 0 10px;
+  text-transform: none;
+
+  a {
+    color: $color__text-main;
+
+    &:hover {
+      color: $color__link;
+      text-decoration: none;
+    }
+  }
+}
+
+.entry-meta {
+  font-size: 13px;
+  color: #AAA;
+}
+
+.byline {
 	display: none;
 }
 
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
-
+/* Post content */
 .page-content,
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+
+  p:first-of-type {
+    font-size: 1.375em; /* Use relative font size to get to 22px */
+  }
 }
 
 .page-links {
