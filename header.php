@@ -33,9 +33,16 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'reserve' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" role="banner">
 		<div class="site-branding">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		</div>
+
+		<div class="site-header"
+		<?php if ( get_header_image() ) : ?>
+			style="background-image: url(<?php header_image(); ?>)"
+		<?php endif; // End header image check. ?>
+		>
 			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 		</div><!-- .site-branding -->
 

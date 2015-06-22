@@ -1,0 +1,21 @@
+#masthead {
+  padding: 0; /* Override base css values */
+}
+
+.site-branding {
+
+}
+
+.site-header {
+  background: transparent url("//s3.amazonaws.com/reserve.com/homepage/headerbg.jpg") no-repeat scroll center center / cover;
+  margin: 0px 0px 2em;
+  padding: 8em 0px 2.5em;
+}
+
+.site-description {
+  @extend h1;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 3.28333px;
+  text-transform: uppercase;
+}

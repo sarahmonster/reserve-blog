@@ -110,7 +110,7 @@ dfn {
   font-style: italic;
 }
 
-h1 {
+h1, .site-description {
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -272,7 +272,7 @@ textarea {
   line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, .site-description, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
@@ -663,6 +663,24 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+#masthead {
+  padding: 0;
+  /* Override base css values */
+}
+
+.site-header {
+  background: transparent url("//s3.amazonaws.com/reserve.com/homepage/headerbg.jpg") no-repeat scroll center center/cover;
+  margin: 0px 0px 2em;
+  padding: 8em 0px 2.5em;
+}
+
+.site-description {
+  color: #fff;
+  margin: 0;
+  letter-spacing: 3.28333px;
+  text-transform: uppercase;
+}
+
 .content-area {
   float: right;
   margin: 0 0 0 -25%;
