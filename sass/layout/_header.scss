@@ -1,9 +1,9 @@
 #masthead {
+  border-bottom: 0;
   padding: 0; /* Override base css values */
 }
 
 .site-branding {
-
 }
 
 .site-header {
@@ -15,7 +15,7 @@
 .site-description {
   @extend h1;
   color: #fff;
-  margin: 0;
+  margin: 0 auto;
   letter-spacing: 3.28333px;
   text-transform: uppercase;
 }

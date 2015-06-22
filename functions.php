@@ -112,6 +112,7 @@ add_action( 'widgets_init', 'reserve_widgets_init' );
  * Enqueue scripts and styles.
  */
 function reserve_scripts() {
+	wp_enqueue_style( 'reserve-bootstrap', '//s3.amazonaws.com/reserve.com/homepage/bootstrap.css' );
 	wp_enqueue_style( 'reserve-base', '//s3.amazonaws.com/reserve.com/homepage/staticbase.css' );
 	wp_enqueue_style( 'reserve-style', get_stylesheet_uri() );
 

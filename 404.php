@@ -7,7 +7,9 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<?php get_sidebar(); ?>
+
+	<div id="primary" class="col-sm-8 col-md-offset-1 content-area">
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">

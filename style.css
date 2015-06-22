@@ -304,6 +304,8 @@ code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem;
+  white-space: unset;
+  /* Revert Bootstrap default. */
 }
 
 abbr, acronym {
@@ -663,7 +665,11 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Overall layout
+--------------------------------------------------------------*/
 #masthead {
+  border-bottom: 0;
   padding: 0;
   /* Override base css values */
 }
@@ -676,30 +682,9 @@ a:hover, a:active {
 
 .site-description {
   color: #fff;
-  margin: 0;
+  margin: 0 auto;
   letter-spacing: 3.28333px;
   text-transform: uppercase;
-}
-
-.content-area {
-  float: right;
-  margin: 0 0 0 -25%;
-  width: 100%;
-}
-
-.site-main {
-  margin: 0 0 0 25%;
-}
-
-.site-content .widget-area {
-  float: left;
-  overflow: hidden;
-  width: 25%;
-}
-
-.site-footer {
-  clear: both;
-  width: 100%;
 }
 
 /*--------------------------------------------------------------

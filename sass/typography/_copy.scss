@@ -28,6 +28,7 @@ pre {
 code, kbd, tt, var {
 	font-family: $font__code;
 	@include font-size(0.9375);
+	white-space: unset; /* Revert Bootstrap default. */
 }
 
 abbr, acronym {
