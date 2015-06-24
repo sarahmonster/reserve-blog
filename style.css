@@ -758,7 +758,10 @@ a:hover, a:active {
 
 .entry-meta {
   font-size: 13px;
-  color: #AAA;
+  color: #aaaaaa;
+}
+.entry-meta a {
+  color: #aaaaaa;
 }
 
 .byline {

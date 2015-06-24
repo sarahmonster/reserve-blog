@@ -31,7 +31,10 @@
 
 .entry-meta {
   font-size: 13px;
-  color: #AAA;
+  color: lighten($color__text-main, 20%);
+  a {
+    color: lighten($color__text-main, 20%);
+  }
 }
 
 .byline {

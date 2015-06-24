@@ -77,7 +77,7 @@ function reserve_posted_on() {
 
 	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() ),
+		esc_html( get_the_date() ) . " " . esc_html__( 'at', 'reserve' ) . " " . esc_html( get_the_time() ),
 		esc_attr( get_the_modified_date( 'c' ) ),
 		esc_html( get_the_modified_date() )
 	);
