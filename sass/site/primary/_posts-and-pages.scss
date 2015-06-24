@@ -44,6 +44,16 @@
   .updated {
     display: none;
   }
+
+  .edit-link {
+    &::before {
+      content: " (";
+    }
+
+    &::after {
+      content: ")";
+    }
+  }
 }
 
 /* Post content */
@@ -60,4 +70,32 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+/* Post footers */
+.entry-footer {
+  background: none;
+  color: $color__text-main;
+  font-size: 0.667em;
+  margin-top: 25px;
+  padding: 0;
+  text-align: left;
+}
+
+a[rel="tag"], a[rel="category tag"] {
+  background: #fff;
+  border-color: $color__border;
+  color: lighten($color__text-main, 15%);
+  border: 1px solid;
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 3px;
+  transition: background 0.2s ease 0s, border 0.2s ease 0s, color 0.2s ease 0s;
+
+  &:hover {
+    background: $color__link;
+    border-color: $color__link;
+    color: #fff;
+    text-decoration: none;
+  }
 }

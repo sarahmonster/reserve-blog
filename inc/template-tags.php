@@ -94,6 +94,8 @@ function reserve_posted_on() {
 
 	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
+	edit_post_link( esc_html__( 'Edit', 'reserve' ), '<span class="edit-link">', '</span>' );
+
 }
 endif;
 
@@ -104,16 +106,17 @@ if ( ! function_exists( 'reserve_entry_footer' ) ) :
 function reserve_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' == get_post_type() ) {
-		/* translators: used between list items, there is a space after the comma */
+
+		/* Disable categories to more closely match Tumblr format
 		$categories_list = get_the_category_list( esc_html__( ', ', 'reserve' ) );
 		if ( $categories_list && reserve_categorized_blog() ) {
 			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'reserve' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
+		*/
 
-		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'reserve' ) );
+		$tags_list = get_the_tag_list( '', esc_html__( ' ', 'reserve' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'reserve' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			echo( $tags_list ); // WPCS: XSS OK.
 		}
 	}
 
@@ -123,7 +126,6 @@ function reserve_entry_footer() {
 		echo '</span>';
 	}
 
-	edit_post_link( esc_html__( 'Edit', 'reserve' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 
