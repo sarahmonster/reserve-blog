@@ -571,6 +571,11 @@ a:hover, a:active {
   width: 50%;
 }
 
+/* Hide post navigation for now */
+.post-navigation {
+  display: none;
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -763,8 +768,10 @@ a:hover, a:active {
 .entry-meta a {
   color: #aaaaaa;
 }
-
-.byline {
+.entry-meta .byline {
+  display: none;
+}
+.entry-meta .updated {
   display: none;
 }
 

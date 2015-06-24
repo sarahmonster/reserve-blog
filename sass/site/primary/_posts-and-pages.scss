@@ -32,13 +32,18 @@
 .entry-meta {
   font-size: 13px;
   color: lighten($color__text-main, 20%);
+
   a {
     color: lighten($color__text-main, 20%);
   }
-}
 
-.byline {
-	display: none;
+  .byline {
+    display: none;
+  }
+
+  .updated {
+    display: none;
+  }
 }
 
 /* Post content */
