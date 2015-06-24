@@ -35,7 +35,7 @@
 
 	<header id="masthead" role="banner">
 		<div class="container site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="//s3.amazonaws.com/reserve.com/homepage/logo.svg" alt="<?php bloginfo( 'name' ); ?>"></a></h1>
 		</div>
 
 		<div class="site-header"

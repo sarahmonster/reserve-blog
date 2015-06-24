@@ -4,12 +4,17 @@
 }
 
 .site-branding {
+  margin: 16px auto 18px;
+
+  img {
+    width: 100px;
+  }
 }
 
 .site-header {
   background: transparent url("//s3.amazonaws.com/reserve.com/homepage/headerbg.jpg") no-repeat scroll center center / cover;
-  margin: 0px 0px 2em;
-  padding: 8em 0px 2.5em;
+  margin: 0 0 2em;
+  padding: 8em 0 2.5em;
 }
 
 .site-description {
