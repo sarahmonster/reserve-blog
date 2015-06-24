@@ -1,0 +1,36 @@
+#footer-footer {
+  height: auto;
+}
+
+.site-footer nav {
+  float: none;
+  height: auto;
+  vertical-align: top;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.site-info {
+  display: none;
+}
+
+.site-footer::after {
+  @include clearfix;
+}
+
+/* Expand on larger screens */
+@media screen and (min-width: 1024px) {
+  .site-footer nav {
+    display: inline-block;
+    text-align: left;
+    width: 26%;
+  }
+
+  #footer-more {
+    display: inline-block;
+    float: none;
+  }
+}

@@ -40,9 +40,21 @@ function reserve_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
+	// This theme uses wp_nav_menu() for footer menus
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'reserve' ),
+		'about' => esc_html__( 'About Menu', 'reserve' ),
+	) );
+
+	register_nav_menus( array(
+		'restaurants' => esc_html__( 'Restaurants Menu', 'reserve' ),
+	) );
+
+		register_nav_menus( array(
+		'support' => esc_html__( 'Support Menu', 'reserve' ),
+	) );
+
+	register_nav_menus( array(
+		'social' => esc_html__( 'Social Menu', 'reserve' ),
 	) );
 
 	/*
