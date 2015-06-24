@@ -778,7 +778,7 @@ a:hover, a:active {
 .entry-meta .byline {
   display: none;
 }
-.entry-meta .updated {
+.entry-meta time + time {
   display: none;
 }
 .entry-meta .edit-link::before {
