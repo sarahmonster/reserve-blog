@@ -128,7 +128,9 @@ function reserve_scripts() {
 	wp_enqueue_style( 'reserve-base', '//s3.amazonaws.com/reserve.com/homepage/staticbase.css' );
 	wp_enqueue_style( 'reserve-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'reserve-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/css/genericons.css', array(), '20150624' );
+
+	//wp_enqueue_script( 'reserve-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'reserve-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 

@@ -107,3 +107,129 @@
 .post-navigation {
 	display: none;
 }
+
+/* Social icons */
+#social-menu {
+	margin: 0 0 1em;
+
+	span {
+		left: -999em;
+		position: absolute;
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	a::before {
+		background-color: #959595;
+		border-radius: 50%;
+		color: #333333;
+		content: "\f408";
+		font-family: Genericons;
+		font-size: 24px;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-weight: normal;
+		line-height: 1;
+		padding: 5px;
+		margin: 0 0.125em;
+		transition: 200ms color ease-in;
+	}
+
+	a:hover {
+		text-decoration: none;
+
+		&::before {
+			background-color: #cacaca;
+		}
+	}
+
+	a[href*="codepen.io"]::before {
+		content: "\f216";
+	}
+
+	a[href*="digg.com"]::before {
+		content: "\f221";
+	}
+
+	a[href*="dribbble.com"]::before {
+		content: "\f201";
+	}
+
+	a[href*="facebook.com"]::before {
+		content: '\f204';
+	}
+
+	a[href*="flickr.com"]::before {
+		content: "\f211";
+	}
+
+	a[href*="plus.google.com"]::before {
+		content: "\f206";
+	}
+
+	a[href*="github.com"]::before {
+		content: "\f200";
+	}
+
+	a[href*="instagram.com"]::before {
+		content: "\f215";
+	}
+
+	a[href*="linkedin.com"]::before {
+		content: "\f208";
+	}
+
+	a[href*="pinterest.com"]::before {
+		content: "\f210";
+	}
+
+	a[href*="polldaddy.com"]::before {
+		content: "\f217";
+	}
+
+	a[href*="getpocket.com"]::before {
+		content: "\f224";
+	}
+
+	a[href*="reddit.com"]::before {
+		content: "\f222";
+	}
+
+	a[href*="skype.com"]::before,
+	a[href*="skype:"]::before {
+		content: "\f220";
+	}
+
+	a[href*="stumbleupon.com"]::before {
+		content: "\f223";
+	}
+
+	a[href*="tumblr.com"]::before {
+		content: "\f214";
+	}
+
+	a[href*="twitter.com"]::before {
+		content: "\f202";
+	}
+
+	a[href*="vimeo.com"]::before {
+		content: "\f212";
+	}
+
+	a[href*="wordpress.org"]::before,
+	a[href*="wordpress.com"]::before {
+		content: "\f205";
+	}
+
+	a[href*="youtube.com"]::before {
+		content: "\f213";
+	}
+
+	a[href$="/feed/"]::before,
+	a[href$="/feed"]::before,
+	a[href$="?feed=rss2"]::before {
+		content: "\f413";
+	}
+}

@@ -576,6 +576,106 @@ a:hover, a:active {
   display: none;
 }
 
+/* Social icons */
+#social-menu {
+  margin: 0 0 1em;
+}
+#social-menu span {
+  left: -999em;
+  position: absolute;
+}
+#social-menu li {
+  display: inline-block;
+}
+#social-menu a::before {
+  background-color: #959595;
+  border-radius: 50%;
+  color: #333333;
+  content: "\f408";
+  font-family: Genericons;
+  font-size: 24px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  line-height: 1;
+  padding: 5px;
+  margin: 0 0.125em;
+  transition: 200ms color ease-in;
+}
+#social-menu a:hover {
+  text-decoration: none;
+}
+#social-menu a:hover::before {
+  background-color: #cacaca;
+}
+#social-menu a[href*="codepen.io"]::before {
+  content: "\f216";
+}
+#social-menu a[href*="digg.com"]::before {
+  content: "\f221";
+}
+#social-menu a[href*="dribbble.com"]::before {
+  content: "\f201";
+}
+#social-menu a[href*="facebook.com"]::before {
+  content: '\f204';
+}
+#social-menu a[href*="flickr.com"]::before {
+  content: "\f211";
+}
+#social-menu a[href*="plus.google.com"]::before {
+  content: "\f206";
+}
+#social-menu a[href*="github.com"]::before {
+  content: "\f200";
+}
+#social-menu a[href*="instagram.com"]::before {
+  content: "\f215";
+}
+#social-menu a[href*="linkedin.com"]::before {
+  content: "\f208";
+}
+#social-menu a[href*="pinterest.com"]::before {
+  content: "\f210";
+}
+#social-menu a[href*="polldaddy.com"]::before {
+  content: "\f217";
+}
+#social-menu a[href*="getpocket.com"]::before {
+  content: "\f224";
+}
+#social-menu a[href*="reddit.com"]::before {
+  content: "\f222";
+}
+#social-menu a[href*="skype.com"]::before,
+#social-menu a[href*="skype:"]::before {
+  content: "\f220";
+}
+#social-menu a[href*="stumbleupon.com"]::before {
+  content: "\f223";
+}
+#social-menu a[href*="tumblr.com"]::before {
+  content: "\f214";
+}
+#social-menu a[href*="twitter.com"]::before {
+  content: "\f202";
+}
+#social-menu a[href*="vimeo.com"]::before {
+  content: "\f212";
+}
+#social-menu a[href*="wordpress.org"]::before,
+#social-menu a[href*="wordpress.com"]::before {
+  content: "\f205";
+}
+#social-menu a[href*="youtube.com"]::before {
+  content: "\f213";
+}
+#social-menu a[href$="/feed/"]::before,
+#social-menu a[href$="/feed"]::before,
+#social-menu a[href$="?feed=rss2"]::before {
+  content: "\f413";
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -768,6 +868,7 @@ a:hover, a:active {
   #footer-more {
     display: inline-block;
     float: none;
+    margin-top: 20px;
   }
 }
 /*--------------------------------------------------------------

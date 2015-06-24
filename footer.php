@@ -23,34 +23,36 @@
     <div id="footer-footer">
       <?php wp_nav_menu( array(
         'theme_location' => 'about',
-        'menu_id' => 'about-menu',
-        'container'       => 'nav',
-        'items_wrap' => '<h3>' . esc_html__( 'About', 'reserve' ) . '</h3> <ul>%3$s</ul>',
-        'fallback_cb'   => false,
+        'menu_id'        => 'about-menu',
+        'container'      => 'nav',
+        'items_wrap'     => '<h3>' . esc_html__( 'About', 'reserve' ) . '</h3> <ul>%3$s</ul>',
+        'fallback_cb'    => false,
       ) ); ?>
 
       <?php wp_nav_menu( array(
         'theme_location' => 'restaurants',
-        'menu_id' => 'restaurants-menu',
-        'container'       => 'nav',
-        'items_wrap' => '<h3>' . esc_html__( 'Restaurants', 'reserve' ) . '</h3> <ul>%3$s</ul>',
-        'fallback_cb'   => false,
+        'menu_id'        => 'restaurants-menu',
+        'container'      => 'nav',
+        'items_wrap'     => '<h3>' . esc_html__( 'Restaurants', 'reserve' ) . '</h3> <ul>%3$s</ul>',
+        'fallback_cb'    => false,
       ) ); ?>
 
       <?php wp_nav_menu( array(
         'theme_location' => 'support',
-        'menu_id' => 'support-menu',
-        'container'       => 'nav',
-        'items_wrap' => '<h3>' . esc_html__( 'Support', 'reserve' ) . '</h3> <ul>%3$s</ul>',
-        'fallback_cb'   => false,
+        'menu_id'        => 'support-menu',
+        'container'      => 'nav',
+        'items_wrap'     => '<h3>' . esc_html__( 'Support', 'reserve' ) . '</h3> <ul>%3$s</ul>',
+        'fallback_cb'    => false,
       ) ); ?>
 
       <div id="footer-more">
         <?php wp_nav_menu( array(
-          'theme_location' => 'social',
-          'menu_id' => 'social-menu',
+          'theme_location'  => 'social',
+          'menu_id'         => 'social-menu',
           'container_class' => 'whatever',
-          'fallback_cb'   => false,
+          'fallback_cb'     => false,
+          'link_before'     => '<span>',
+          'link_after'      => '</span>',
         ) ); ?>
 
           <small>
