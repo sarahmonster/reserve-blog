@@ -55,7 +55,7 @@
 
           <small>
             <a href="<?php echo esc_url( __( 'http://wordpress.com/', 'reserve' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'reserve' ), 'WordPress' ); ?></a>
-            <span>Copyright <?php echo date( 'Y' ); ?></span>
+            <span>Copyright <?php echo esc_html( date( 'Y' ) ); ?></span>
             <a href="//reserve.com/legal/terms" class="footer-link">Terms &amp; Conditions</a>
             <a href="//reserve.com/legal/privacy" class="footer-link">Privacy Policy </a>
           </small>
